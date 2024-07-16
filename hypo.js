@@ -50,3 +50,16 @@ document.getElementById("mycheckboxbutton").onclick=function(){
     }
 
 }
+//nested loop:
+let symbol;
+symbol=window.prompt("Enter the symbol: ");
+let rows;
+rows=window.prompt("Enter rows:");
+let col;
+col=window.prompt("Enter col: ");
+for(let i=0;i<rows;i++){
+    for(let j=0;j<col;j++){
+        document.getElementById("nested").innerHTML +=symbol;
+    }
+    document.getElementById("nested").innerHTML +="<br>";
+}
