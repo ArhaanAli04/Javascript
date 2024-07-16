@@ -69,3 +69,7 @@ lastname=namee.slice(namee.indexOf(" ")+1);
 console.log("First name is: ",firstname);
 console.log("Last name is: ",lastname);
 
+// for loop:
+for(let i=1;i<10;i++){
+    console.log(i);
+}
