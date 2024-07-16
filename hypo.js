@@ -24,3 +24,29 @@ document.getElementById("reset").onclick=function(){
     count=0;
     document.getElementById("countlabel").innerHTML=count;
 }
+
+//checked property:
+document.getElementById("mycheckboxbutton").onclick=function(){
+    const mycheckbox=document.getElementById("mycheckbox");
+    const visa=document.getElementById("visabtn");
+    const master=document.getElementById("mastercardbtn");
+    const payapl=document.getElementById("paypalbtn");
+    if(mycheckbox.checked){
+        console.log("You have subscribed");
+    }else{
+        console.log("You have not subsribed");
+    }
+    if(visa.checked){
+        document.getElementById("visalabel").innerHTML="You have payed by Visa";
+        console.log("You have payed by Visa");
+    }
+    else if(master.checked){
+        document.getElementById("masterlabel").innerHTML="You have payed by MasterCard";
+        console.log("You have payed by MasterCard");
+    }
+    else if(payapl.checked){
+        document.getElementById("paypallabel").innerHTML="You have payed by PayPal";
+        console.log("You have payed by PayPal");
+    }
+
+}

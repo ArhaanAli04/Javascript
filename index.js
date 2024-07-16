@@ -54,3 +54,18 @@ mx=Math.max(a,b,c);
 mi=Math.min(a,b,c);
 console.log(mx);
 console.log(mi);
+
+//string methods:
+let namee="Arhaan Ali";
+console.log("Lenght of string: ",namee.length);
+console.log("First index of h: ",namee.indexOf("h"));
+console.log("Last idnex if a: ",namee.lastIndexOf("a"));
+console.log("String without spaces: ",namee.trim());
+console.log(namee.toUpperCase());
+let firstname;
+let lastname;
+firstname=namee.slice(0,namee.indexOf(" "));
+lastname=namee.slice(namee.indexOf(" ")+1);
+console.log("First name is: ",firstname);
+console.log("Last name is: ",lastname);
+
