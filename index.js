@@ -134,3 +134,54 @@ let str="Cricket";
 console.log(...str);
 console.log(Math.max(arr));// will give NaN
 console.log(Math.max(...arr)); //will give max number from arr
+
+//rest parameters
+let a1=2;
+let a2=3;
+let a3=4;
+let a4=5;
+function sum(...numbers){
+    let total=0;
+    for(let i of numbers){
+        total +=i;
+    }
+    return total;
+}
+console.log(sum(a1,a2,a3));
+
+//callback:
+function mysum(a,b,func){
+    let result=a+b;
+    func(result);
+}
+function display(total){
+    console.log(total);
+}
+mysum(10,20,display);
+
+//nested functions:
+let yourname="Jack";
+let inbox=2;
+login();
+function login(){
+    function showName(){
+        console.log(`Hello ${yourname}`);
+    }
+    function showInbox(){
+        console.log(`You have ${inbox} messages`);
+    }
+    showName();
+    showInbox();
+}
+
+//maps
+const Store=new Map([
+    ["shirt",200],
+    ["tshirt",150],
+    ["jeans",400],
+    ["trousers",600]
+]);
+
+Store.forEach((value, key) => {
+    console.log(`${key}  ${value}`);
+});
