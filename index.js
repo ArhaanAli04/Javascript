@@ -194,3 +194,13 @@ const Store=new Map([
 Store.forEach((value, key) => {
     console.log(`${key}  ${value}`);
 });
+
+/*
+let myArr=[20,40,87,65,90];
+for(let i=0;i<myArr.length;i++){
+    console.log(myArr[i]);
+}
+myArr.forEach(i =>{
+    console.log(i);
+
+}) */
