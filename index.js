@@ -99,7 +99,7 @@ function checkage(myage){
     return myage>=18?true:false;
 }    
 //arrays:
-let arr=[10,87,45,20,60];
+/*let arr=[10,87,45,20,60];
 console.log(arr);
 arr.push(99);
 console.log(arr);
@@ -172,7 +172,16 @@ function login(){
     }
     showName();
     showInbox();
+}*/
+//function expression:
+const greet=function(){
+    console.log("Hello, today's a good day!");
 }
+greet();
+
+//arrow function:
+const tellAge=(abc)=> console.log(`Hello ${abc}`);
+tellAge("JOHN");
 
 //maps
 const Store=new Map([
