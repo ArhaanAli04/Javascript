@@ -221,3 +221,37 @@ myArr.forEach(i =>{
     console.log(i);
 
 }) */
+
+//objects:
+const myCar={
+    brand:"Mercedes",
+    year: 2020,
+    color:"Black",
+    price:"2 Crore",
+    drive: function(){
+        console.log("This car can drive at 300kph");
+    },
+    showModel: function(){
+        console.log(`The model of the car is ${this.brand}`);
+
+    }
+}    
+console.log(myCar.brand);
+console.log(myCar.price);
+myCar.drive();
+myCar.showModel();
+
+class Game{
+    score=0;
+    start(){
+        console.log("You have started the game");
+    }
+    exit(){
+        console.log("You have exited the game");
+    }
+}
+const obj=new Game();
+obj.start();
+obj.exit();
+obj.score=100;
+console.log(obj.score);
