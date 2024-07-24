@@ -255,3 +255,20 @@ obj.start();
 obj.exit();
 obj.score=100;
 console.log(obj.score);
+
+//constructors:
+class Student{
+    constructor(name,gpa,age){
+        this.name=name;
+        this.gpa=gpa;
+        this.age=age;
+    }
+    display(){
+        console.log(`Name if the student is : ${this.name}`);
+        console.log(`Gpa of the student is : ${this.gpa}`);
+        console.log(`Age of the student is : ${this.age}`);
+    }
+
+}
+const obj1=new Student("Max",10,2000);
+obj1.display();
