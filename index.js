@@ -194,6 +194,23 @@ const Store=new Map([
 Store.forEach((value, key) => {
     console.log(`${key}  ${value}`);
 });
+/*
+let cart=0;
+cart += Store.get("jeans");// value will be 400
+cart +=Store.get("trousers");
+console.log(cart);
+
+Store.set("hat",280);
+Store.forEach((value,key) => {
+    console.log(`${key},${value}`);
+}
+)
+Store.delete("trousers");
+Store.forEach((value,key) =>{
+    console.log(`${key},${value}`);
+}) */
+console.log(Store.size);
+console.log("Does the store have jeans:",Store.has("jeans"));
 
 /*
 let myArr=[20,40,87,65,90];
