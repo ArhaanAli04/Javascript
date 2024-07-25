@@ -223,7 +223,7 @@ myArr.forEach(i =>{
 }) */
 
 //objects:
-const myCar={
+/*const myCar={
     brand:"Mercedes",
     year: 2020,
     color:"Black",
@@ -271,4 +271,45 @@ class Student{
 
 }
 const obj1=new Student("Max",10,2000);
+const obj2=new Student("Max",10,2000);
+const obj3=new Student("Will",80,2500);
+const objArray=[obj1,obj2,obj3];
 obj1.display();
+console.log(objArray[2].gpa);
+
+//inheritance:
+class animal{
+    eat(){
+        console.log(`${this.name} is eating`);
+    }
+    sleep(){
+        console.log(`${this.name} is sleeping`);
+    }
+}
+class cat extends animal{
+    name="cat";
+    milk(){
+        console.log(`${this.name} is drnking milk`);
+    }
+}
+const catobj=new cat();
+catobj.sleep();
+catobj.milk();
+*/
+
+//error handling:
+
+
+try{
+    let inp=window.prompt("Enter a number:");
+    inp=Number(inp);
+    if(isNaN(inp)) throw "That was not a number";
+    if(inp=="") throw "That was empty";
+    console.log(`${inp} is a number`);
+
+}
+catch(error){
+    console.log(error);
+
+}
+
