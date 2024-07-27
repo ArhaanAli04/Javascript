@@ -313,3 +313,11 @@ catch(error){
 
 }
 
+//date object:
+let date=new Date();
+date=date.toLocaleString();
+console.log(date);
+
+const nameTag=document.createElement("h3");
+nameTag.textContent="Today is 27th of July";
+document.body.append(nameTag); 
