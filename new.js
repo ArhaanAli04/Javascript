@@ -21,4 +21,11 @@ document.getElementById("1").onclick=function(){
 
 
 //cookies:
-console.log(navigator.cookieEnabled);    
+console.log(navigator.cookieEnabled);
+
+let arr=[1,2,9,7,6,5];
+arr.forEach(i=>{
+    console.log(i);
+}
+
+);
